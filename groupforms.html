@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Feedback</title>
+    <link rel="stylesheet" href="groupforms.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="group_feedback.html">Group Feedback</a>
+        <a href="peer_review.html">Peer Review Feedback</a>
+        <a href="github_repos.html">GitHub Repos</a>
+    </div>
+    <div class="container">
+        <h1>Group Feedback Forms</h1>
+        
+        <form>
+            <h3>Individual Feedback</h3>  
+            <label for="rating1"> Scale example (1-5):</label>
+            <input type="number" id="rating1" name="rating1" min="1" max="5" required>
+            
+            <label for="comments1">Additional Comments:</label>
+            <textarea id="comments1" name="comments1" rows="3"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <form>
+            <h3>Feedback Form 1: {{ name }}</h3>
+            <label for="name2">Name:</label>
+            <input type="text" id="name2" name="name2" required>
+            
+            <label for="rating2">Scale example (1-5):</label>
+            <input type="number" id="rating2" name="rating2" min="1" max="5" required>
+            
+            <label for="comments2">Additional Comments:</label>
+            <textarea id="comments2" name="comments2" rows="3"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <form>
+            <h3>Feedback Form 2: {{ name2 }}</h3>
+            <label for="name3">Name:</label>
+            <input type="text" id="name3" name="name3" required>
+            
+            <label for="rating3">Scale example (1-5):</label>
+            <input type="number" id="rating3" name="rating3" min="1" max="5" required>
+            
+            <label for="comments3">Additional Comments:</label>
+            <textarea id="comments3" name="comments3" rows="3"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <form>
+            <h3>Feedback Form 3: {{ name3 }}</h3>
+            <label for="name1">Name:</label>
+            <input type="text" id="name1" name="name1" required>
+            
+            <label for="rating1">Scale example (1-5):</label>
+            <input type="number" id="rating1" name="rating1" min="1" max="5" required>
+            
+            <label for="comments1">Additional Comments:</label>
+            <textarea id="comments1" name="comments1" rows="3"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>

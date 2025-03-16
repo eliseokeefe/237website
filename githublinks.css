@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+}
+.team {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.team h2 {
+    color: #333;
+}
+.team ul {
+    list-style-type: none;
+    padding: 0;
+}
+.team ul li {
+    margin: 10px 0;
+}
+.team ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.team ul li a:hover {
+    text-decoration: underline;
+}
