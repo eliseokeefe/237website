@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="237website.html">Home</a>
+        <a href="groupforms.html">Group Feedback Forms</a>
+        <a href="#peer-review">Peer Review Feedback Forms</a>
+        <a href="#githublinks.html">GitHub Repos</a>
+    </div>
+    <h1>Admin Page</h1>
+    <div class="container">
+        <div class="form-section">
+            <h2>Add Group</h2>
+            <form id="addGroupForm">
+                <label for="groupName">Group Name:</label>
+                <input type="text" id="groupName" name="groupName" placeholder="Enter group name" required>
+                <select id="dropdown" name="dropdown">
+                    <option value="" disabled selected>Select students</option>
+                </select>
+                <button type="submit">Add Group</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Delete Group</h2>
+            <form id="deleteGroupForm">
+                <label for="deleteGroup">Select Group:</label>
+                <select id="deleteGroup" name="deleteGroup">
+                    <option value="" disabled selected>Select a group</option>
+                </select>
+                <button type="submit">Delete Group</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Submit Grades</h2>
+            <form id="submitGradesForm">
+                <label for="studentOrGroup">Select Student/Group:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" disabled selected>Select a student or group</option>
+                </select>
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" name="grade" placeholder="Enter grade" required>
+                <input type="text" id="gradeComment" name="gradeComment" placeholder="Enter comment" required>
+                <button type="submit">Submit Grade</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,3 +1,18 @@
+#students {
+    height: 12px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#gradeComments {
+    width: 100%; 
+    height: 12px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
