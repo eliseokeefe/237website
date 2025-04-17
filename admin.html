@@ -45,12 +45,67 @@
                 <select id="dropdown" name="dropdown">
                     <option value="" disabled selected>Select a student or group</option>
                 </select>
-                <label for="grade">Grade:</label>
-                <input type="text" id="grade" name="grade" placeholder="Enter grade" required>
-                <input type="text" id="gradeComment" name="gradeComment" placeholder="Enter comment" required>
-                <button type="submit">Submit Grade</button>
+              
+                <br>
+                <label for="rank">Score for Project Management (1-4):</label>
+                <input type="number" id="rank" name="rank" min="1" max="5" required>
+                <br>
+                <label for="comment">Comment for Project Management:</label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+
+                <br>
+                <label for="rank">Score for Repository Structure (1-4):</label>
+                <input type="number" id="rank" name="rank" min="1" max="5" required>
+                <br>
+                <label for="comment">Comment for Repository Structure:</label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+
+                <br>
+                <label for="rank">Score for Code Cleanliness (1-4):</label>
+                <input type="number" id="rank" name="rank" min="1" max="5" required>
+                <br>
+                <label for="comment">Comment for Code Cleanliness:</label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+
+                
+                <br>
+                <label for="rank">Score for Testing (1-4):</label>
+                <input type="number" id="rank" name="rank" min="1" max="5" required>
+                <br>
+                <label for="comment">Comment for Testing:</label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+
+                <br>
+                <label for="rank">Score for Usability and Functionality (1-4):</label>
+                <input type="number" id="rank" name="rank" min="1" max="5" required>
+                <br>
+                <label for="comment">Comment for Usability and Functionality:</label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+                <br>
+
+
+                <label class="submit">
+                <button type="submit">Submit Grades</button>
+            </label>
             </form>
+        
         </div>
     </div>
+
+    <label class="switch">
+        <input type="checkbox" id="toggle-access">
+        <span class="slider round"></span>
+      </label>
+      <p id="toggle-label">Enable Forms</p>
+      
+      <div id="forms-section" style="display: none; margin-top: 20px;">
+        <a href="groupforms.html">Group Feedback Form</a><br />
+        <a href="peerreview.html">Peer Review Form</a>
+      </div>
+<script src="admin.js"></script>
 </body>
-</html>
+</html></select></select>

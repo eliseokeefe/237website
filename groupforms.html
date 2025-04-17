@@ -18,57 +18,64 @@
         
         <form>
             <h3>Individual Feedback</h3>  
-            <label for="rating1"> Scale example (1-5):</label>
-            <input type="number" id="rating1" name="rating1" min="1" max="5" required>
+            <strong> <label>Project Management:</label> </strong>   
+            <div class="radio-group">
+                <label><input type="radio" name="rating1" value="1" required> Excellent - Board is filled with appropriate tasks, which are being assigned to each team member and updated over time.</label>
+                <label><input type="radio" name="rating1" value="2"> Satisfactory - Some minor information is missing from the board (stories, team information, etc.)</label>
+                <label><input type="radio" name="rating1" value="3"> Unsatisfactory - Board exists but is barely used or is only being used by part of the team (one or two people are doing all of the work).</label>
+                <label><input type="radio" name="rating1" value="4"> Unacceptable - No board or project management found</label>
+            </div>
             
-            <label for="comments1">Additional Comments:</label>
+            <label for="comments1">Comments about Project Management:</label>
+            <textarea id="comments1" name="comments1" rows="3"></textarea>
+
+            <strong> <label>Repository Structure:</label> </strong>
+             <div class="radio-group">
+            <div>
+                <label><input type="radio" name="rating1" value="1" required>Excellent - Proper branching strategies are being used (one branch per task). No extra files in the repository. Pull requests created for each merge.</label>
+                <label><input type="radio" name="rating1" value="2"> Satisfactory - A few branches and/or pull requests missing or incomplete</label>
+                <label><input type="radio" name="rating1" value="3">Unsatisfactory - Poor branching strategy. Little to no pull requests. Lots of things in the repository that shouldn't belong there.</label>
+                <label><input type="radio" name="rating1" value="4"> Unacceptable - No branching strategy. Everything committed directly to master. </label>
+            </div>
+            </div>
+            <label for="comments1">Comments about Repository Structure:</label>
+            <textarea id="comments1" name="comments1" rows="3"></textarea>
+
+           <strong> <label>Code Cleanliness:</label> </strong>
+            <div class="radio-group">
+            <div>
+                <label><input type="radio" name="rating1" value="1" required>Excellent - Code has been refactored to follow clean coding guidelines, with perhaps a few minor exceptions.</label>
+                <label><input type="radio" name="rating1" value="2">Satisfactory - Code is fairly clean with one big issue or lots of smaller cleanliness issues. </label>
+                <label><input type="radio" name="rating1" value="3">Unsatisfactory - Many large issues with code cleanliness.</label>
+                <label><input type="radio" name="rating1" value="4"> Unacceptable - No attempt made to clean up the code, just a pile of brackets and semi-colons. </label>
+            </div>
+            </div>
+            <label for="comments1">Comments about Code Cleanliness:</label>
+            <textarea id="comments1" name="comments1" rows="3"></textarea>
+
+         <strong>  <label>Code Testing:</label> </strong>
+            <div>
+                <div class="radio-group">
+                <label><input type="radio" name="rating1" value="1" required>Excellent - Every class (with the exception of UI classes) has a significant amount of test coverage and most of the tests pass</label>
+                <label><input type="radio" name="rating1" value="2"> Satisfactory - Test coverage is pretty good maybe a few gaps </label>
+                <label><input type="radio" name="rating1" value="3"> Unsatisfactory - Poor test coverage and/or poorly written tests</label>
+                <label><input type="radio" name="rating1" value="4">Unacceptable - Little to no testing present </label>
+            </div>
+            </div>
+            <label for="comments1">Comments about Code Testing:</label>
             <textarea id="comments1" name="comments1" rows="3"></textarea>
             
-            <button type="submit">Submit</button>
-        </form>
-
-        <form>
-            <h3>Feedback Form 1: {{ name }}</h3>
-            <label for="name2">Name:</label>
-            <input type="text" id="name2" name="name2" required>
-            
-            <label for="rating2">Scale example (1-5):</label>
-            <input type="number" id="rating2" name="rating2" min="1" max="5" required>
-            
-            <label for="comments2">Additional Comments:</label>
-            <textarea id="comments2" name="comments2" rows="3"></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-
-        <form>
-            <h3>Feedback Form 2: {{ name2 }}</h3>
-            <label for="name3">Name:</label>
-            <input type="text" id="name3" name="name3" required>
-            
-            <label for="rating3">Scale example (1-5):</label>
-            <input type="number" id="rating3" name="rating3" min="1" max="5" required>
-            
-            <label for="comments3">Additional Comments:</label>
-            <textarea id="comments3" name="comments3" rows="3"></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-
-        <form>
-            <h3>Feedback Form 3: {{ name3 }}</h3>
-            <label for="name1">Name:</label>
-            <input type="text" id="name1" name="name1" required>
-            
-            <label for="rating1">Scale example (1-5):</label>
-            <input type="number" id="rating1" name="rating1" min="1" max="5" required>
-            
-            <label for="comments1">Additional Comments:</label>
+           <strong> <label> Usability and functionality of this project: </label> </strong>
+            <div>
+                <div class="radio-group">
+                <label><input type="radio" name="rating1" value="1" required>Excellent - Code runs and does everything that is stated in the README. Easy to use and understand.</label>
+                <label><input type="radio" name="rating1" value="2"> Satisfactory - Most things work but some minor usability/functionality issues. </label>
+                <label><input type="radio" name="rating1" value="3"> Unsatisfactory - Code runs, but many things are missing or it is difficult to understand how to use.</label>
+                <label><input type="radio" name="rating1" value="4">Unacceptable - Code is completely non-functional </label>
+            </div>
+            </div>
+            <label for="comments1">Comments about Usability and functionality of this project:</label>
             <textarea id="comments1" name="comments1" rows="3"></textarea>
-            
+            <br>
             <button type="submit">Submit</button>
         </form>
-
-    </div>
-</body>
-</html>
